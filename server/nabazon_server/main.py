@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from starlette_prometheus import metrics, PrometheusMiddleware
 
 from nabazon_server.config_reader import load_yml_from_file
-from nabazon_server.core.location_data import Location
+from nabazon_server.core.location_data import Post
 
 config = load_yml_from_file()
 
@@ -20,9 +20,11 @@ def read_root():
 def read_root():
     return config
 
-@app.post("/psychic")
-async def psychic(location: Location):
-    return location
+@app.get("/posts")
+async def posts():
+    return [
+        Post(id="6", title = "Some Meeting", description = "Super duper awesome meeting with lots of cool people you wanna meet.")
+    ]
 
 
 def main():

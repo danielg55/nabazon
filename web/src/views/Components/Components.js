@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {makeStyles} from "@material-ui/core/styles";
 import Footer from "components/Footer/Footer.js";
 import Parallax from "components/Parallax/Parallax.js";
-import Home from "./Sections/Home.js";
+import Home from "./Home.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import Navbar from "./Navbar";

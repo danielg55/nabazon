@@ -5,6 +5,7 @@ import {makeStyles} from "@material-ui/core/styles";
 import Footer from "components/Footer/Footer.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Home from "./Home.js";
+import NewActivity from "./NewActivity.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import Navbar from "./Navbar";
@@ -21,11 +22,16 @@ export default function Components(props) {
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <Switch>
                     {/*Here all of the tabs are defined! Note: A link should be defined in the Navbar component*/}
+                    <Route exact path="/new_activity">
+                        <NewActivity/>
+                    </Route>
+
                     <Route exact path="/">
                         <Home/>
                     </Route>
-                    <Route exact path="/about"></Route>
+
                     <Route exact path="/calendar"></Route>
+                    <Route exact path="/about"></Route>
                 </Switch>
             </div>
             <Footer/>

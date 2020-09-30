@@ -8,6 +8,9 @@ import Home from "./Sections/Home.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import Navbar from "./Navbar";
+import LandingPage from "../LandingPage/LandingPage";
+import LoginPage from "../LoginPage/LoginPage";
+import ProfilePage from "../ProfilePage/ProfilePage";
 
 const useStyles = makeStyles(styles);
 
@@ -24,17 +27,9 @@ export default function Components(props) {
                     <Route exact path="/">
                         <Home/>
                     </Route>
-                    <Route path="/examples">
-                        <Example/>
-                    </Route>
                 </Switch>
             </div>
             <Footer/>
         </Router>
     );
-}
-
-// TODO: Delete!
-function Example() {
-    return <h1>example</h1>
 }

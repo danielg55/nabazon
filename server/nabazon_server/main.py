@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from starlette_prometheus import metrics, PrometheusMiddleware
 
 from nabazon_server.config_reader import load_yml_from_file
-from nabazon_server.core.location_data import Post
+from nabazon_server.core.post import Post
 
 config = load_yml_from_file()
 

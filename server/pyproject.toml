@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "Hoshi"
+name = "nabazon_server"
 version = "0.1.0"
 description = ""
-authors = ["idob1996 <idob1996@gmail.com>"]
+authors = ["peleg68 <pelegtsa@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -19,7 +19,7 @@ pytest = "^5.2"
 pytest-cov = "^2.8.1"
 
 [tool.poetry.scripts]
-app = 'hoshi.main:main'
+app = 'nabazon_server.main:main'
 
 [build-system]
 requires = ["poetry>=0.12"]

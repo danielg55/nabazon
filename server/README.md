@@ -1,1 +1,1 @@
-This is an example project showing how to use Poetry with Fast API
+This is the server of Nabazon.

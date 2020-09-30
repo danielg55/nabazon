@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI
 from starlette_prometheus import metrics, PrometheusMiddleware
 
-from hoshi.config_reader import load_yml_from_file
-from hoshi.core.location_data import Location
+from nabazon_server.config_reader import load_yml_from_file
+from nabazon_server.core.location_data import Location
 
 config = load_yml_from_file()
 

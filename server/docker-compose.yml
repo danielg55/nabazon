@@ -1,6 +1,6 @@
 version: "2.1"
 services:
-  hoshi:
+  nabazon_server:
     build:
       context: ./
       dockerfile: Dockerfile

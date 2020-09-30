@@ -1,8 +1,8 @@
 from fastapi.testclient import TestClient
-from hoshi.main import app
+from nabazon_server.main import app
 
 
-class TestHoshi:
+class TestNabazonServer:
     client = TestClient(app)
 
     def test_read_main(self):

@@ -17,7 +17,7 @@ export default function Events(props) {
             <Grid container spacing={10} justify="center">
                 {props.events.map(event => {
                     return (<Grid item xs={6} sm={3}>
-                        <ImgMediaCard headline={event.title}
+                        <ImgMediaCard title={event.title}
                                       description={event.description}/>
                     </Grid>)
                 })}

@@ -6,7 +6,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return jsonify(messages=[dict(title='הודעה 1', description="זה התוכן של הודעה 1")]*17)
+    return jsonify(messages=[dict(title='הודעה', description="זה התוכן של הודעה")]*17)
 
 
 if __name__ == '__main__':

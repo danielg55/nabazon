@@ -1,0 +1,8 @@
+version: "2.1"
+services:
+  nabazon_server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

@@ -187,44 +187,6 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Info Color"
-            color="info"
-            rightLinks={
-              <List className={classes.list}>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink + " " + classes.navLinkActive}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Discover
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Profile
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Settings
-                  </Button>
-                </ListItem>
-              </List>
-            }
-          />
-          <Header
             brand="Primary Color"
             color="primary"
             rightLinks={

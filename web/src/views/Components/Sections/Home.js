@@ -26,7 +26,7 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/basic
 
 const useStyles = makeStyles(styles);
 
-export default function SectionBasics() {
+export default function Home() {
   const classes = useStyles();
   const [checked, setChecked] = React.useState([24, 22]);
   const [selectedEnabled, setSelectedEnabled] = React.useState("b");

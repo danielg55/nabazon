@@ -25,11 +25,9 @@ export default function Components(props) {
                     <Route exact path="/new_activity">
                         <NewActivity/>
                     </Route>
-
                     <Route exact path="/">
                         <Home/>
                     </Route>
-
                     <Route exact path="/calendar"></Route>
                     <Route exact path="/about"></Route>
                 </Switch>

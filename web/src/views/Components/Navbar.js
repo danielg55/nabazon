@@ -1,23 +1,42 @@
-import GridContainer from "../../components/Grid/GridContainer";
-import GridItem from "../../components/Grid/GridItem";
-import Header from "../../components/Header/Header";
-import HeaderLinks from "../../components/Header/HeaderLinks";
 import React from "react";
+import Toolbar from "@material-ui/core/Toolbar";
+import AppBar from "@material-ui/core/AppBar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import {Link} from "react-router-dom";
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+    },
+}));
+
+function LinkButton(props) {
+    return <Button color="inherit">{props.href.substring(1)}</Button>;
+}
 
 export default function Navbar(props) {
-    const {...rest} = props;
-    return <GridContainer>
-        <GridItem xs={12} sm={12} md={6}>
-            <Header
-                brand="Info Color"
-                rightLinks={<HeaderLinks/>}
-                fixed
-                changeColorOnScroll={{
-                    height: 400,
-                    color: "white"
-                }}
-                {...rest}
-            />
-        </GridItem>
-    </GridContainer>;
+    const classes = useStyles();
+
+    return <div className={classes.root}>
+        <AppBar position="fixed" color="default">
+            <Toolbar>
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                </IconButton>
+                <Typography variant="h5" className={classes.title}>
+                    Nabazon
+                </Typography>
+                <Link to="/about" component={LinkButton}/>
+                <Link to="/calendar" component={LinkButton}/>
+            </Toolbar>
+        </AppBar>
+    </div>
 }

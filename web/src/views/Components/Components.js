@@ -24,6 +24,8 @@ export default function Components(props) {
                     <Route exact path="/">
                         <Home/>
                     </Route>
+                    <Route exact path="/about"></Route>
+                    <Route exact path="/calendar"></Route>
                 </Switch>
             </div>
             <Footer/>

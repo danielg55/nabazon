@@ -34,7 +34,13 @@ export default function Navbar(props) {
                 <Typography variant="h5" className={classes.title}>
                     Nabazon
                 </Typography>
-                <Link href="/new_activity" to="/new_activity" component={LinkButton}/>
+
+                <Link to={"/login-page"}>
+                    <Button>
+                        פעילות חדשה
+                    </Button>
+                </Link>
+
                 <Link to="/calendar" component={LinkButton}/>
                 <Link to="/about" component={LinkButton}/>
             </Toolbar>

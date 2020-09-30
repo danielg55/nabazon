@@ -9,6 +9,7 @@ import NewActivity from "./NewActivity.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import Navbar from "./Navbar";
+import LoginPage from "../LoginPage/LoginPage";
 
 const useStyles = makeStyles(styles);
 
@@ -22,14 +23,14 @@ export default function Components(props) {
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <Switch>
                     {/*Here all of the tabs are defined! Note: A link should be defined in the Navbar component*/}
-                    <Route exact path="/new_activity">
-                        <NewActivity/>
+                    <Route exact path="/login-page">
+                        <LoginPage/>
                     </Route>
                     <Route exact path="/">
                         <Home/>
                     </Route>
-                    <Route exact path="/calendar"></Route>
-                    <Route exact path="/about"></Route>
+                    {/*<Route exact path="/calendar"></Route>*/}
+                    {/*<Route exact path="/about"></Route>*/}
                 </Switch>
             </div>
             <Footer/>

@@ -23,7 +23,7 @@ import ImgMediaCard from "./ImageMediaCard";
 
 const useStyles = makeStyles(styles);
 
-export default function Home() {
+export default function SectionBasics() {
   const classes = useStyles();
   return (
     <div className={classes.sections}>

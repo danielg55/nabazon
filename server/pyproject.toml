@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "peleg-proj"
+version = "0.1.0"
+description = ""
+authors = ["Peleg Tsadok <pelegtsa@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+loguru = "0.4.1"
+fastapi = "^0.53.2"
+uvicorn = "0.11.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+app = 'peleg_proj:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

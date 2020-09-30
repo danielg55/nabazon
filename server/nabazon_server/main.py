@@ -17,7 +17,7 @@ def read_root():
     return {"Hello": "World"}
 
 @app.get("/config")
-def read_root():
+def config():
     return config
 
 @app.get("/posts")

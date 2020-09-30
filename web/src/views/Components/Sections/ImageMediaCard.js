@@ -14,12 +14,9 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard(props = {
-    headline: "כדורעף בגנצו",
-    eyeColor: "blue",
-    age: "4"
-}) {
+export default function ImgMediaCard(props) {
   const classes = useStyles();
+  const { headline, description, ...rest } = props;
 
   return (
     <Card className={classes.root}>
@@ -32,21 +29,20 @@ export default function ImgMediaCard(props = {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+          <Typography gutterBottom variant="h5" component="h2" align="right">
+              {headline}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="body2" color="textSecondary" component="p" align="right" dir="rtl">
+              {description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          עוד
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          להצטרף
         </Button>
       </CardActions>
     </Card>

@@ -5,9 +5,10 @@ import "assets/scss/material-kit-react.scss?v=1.9.0";
 
 // pages for this product
 import Components from "views/Components/Components.js";
+import CalendarPage from "views/CalendarPage/CalendarPage";
 
 ReactDOM.render(
-    <Components/>,
+    <CalendarPage/>,
   // <Router history={hist}>
   //   <Switch>
   //     <Route path="/landing-page" component={LandingPage} />

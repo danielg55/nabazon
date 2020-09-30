@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {makeStyles} from "@material-ui/core/styles";
 import Footer from "components/Footer/Footer.js";
 import Parallax from "components/Parallax/Parallax.js";
@@ -8,9 +8,6 @@ import Home from "./Sections/Home.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import Navbar from "./Navbar";
-import LandingPage from "../LandingPage/LandingPage";
-import LoginPage from "../LoginPage/LoginPage";
-import ProfilePage from "../ProfilePage/ProfilePage";
 
 const useStyles = makeStyles(styles);
 

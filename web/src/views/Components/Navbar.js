@@ -10,7 +10,6 @@ export default function Navbar(props) {
         <GridItem xs={12} sm={12} md={6}>
             <Header
                 brand="Info Color"
-                color="info"
                 rightLinks={<HeaderLinks/>}
                 fixed
                 changeColorOnScroll={{
